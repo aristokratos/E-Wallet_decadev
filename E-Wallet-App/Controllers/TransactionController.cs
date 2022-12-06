@@ -4,8 +4,10 @@ using E_Wallet_App.Domain.Dtos;
 using E_Wallet_App.Domain.Models;
 using E_Wallet_App.Entity.Dtos;
 using E_WalletApp.CORE.Interface.RepoInterface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace E_Wallet_App.Controllers
 {
@@ -108,5 +110,31 @@ namespace E_Wallet_App.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        //[AllowAnonymous]
+        //[Route("Conversion")]
+        //[HttpGet]
+       
+        //public async Task<string> GetExchangeRate([FromForm]string from, string to)
+        //{
+        //    //Examples:
+        //    //from = "EUR"
+        //    //to = "USD"
+        //    using (var client = new HttpClient())
+        //    {
+        //        try
+        //        {
+        //            client.BaseAddress = new Uri("https://open.er-api.com/v6/latest/USD");
+        //            var response = await client.GetAsync($"/api/v6/convert?q={from}_{to}&compact=y");
+        //            var stringResult = await response.Content.ReadAsStringAsync();
+        //            var dictResult = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(stringResult);
+        //            return dictResult[$"{from}_{to}"]["val"];
+        //        }
+        //        catch (HttpRequestException httpRequestException)
+        //        {
+        //            response.EnsureSuccessStatusCode((httpRequestException.StackTrace));
+        //            return BadRequest("Error calling API. Please do manual lookup.");
+        //        }
+        //    }
+       // }
     }
 }

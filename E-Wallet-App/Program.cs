@@ -34,6 +34,7 @@ builder.Services.AddScoped<IWalletService, WalletService>();
 builder.Services.AddScoped<IWalletLogic, WalletLogic>();
 builder.Services.AddScoped<ITransLogic, TransLogic >();
 builder.Services.AddDbContextPool<ApplicationContext>(options => options.UseSqlite("Data source =E-WalletDatabase"));
+builder.Services.AddHttpClient();
 builder.Services.AddSwaggerGen(options => {
 
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
