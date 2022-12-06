@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3F1Px6SCzgZF/ByPsN6auCf7SBkNC3tHrTe/+titTvm5Im4z9ucajlMwUQQmpAWhpvFS/ka6+46jraE5QDNk7w==",
+  "dgSpecHash": "NCfKoYV1MNEiNSITbz124Jho18j9K1fpqwMz3Md+L/hiNuLJ3gF3YvxNJLFebOFKV3p9gzOO3JgnhVoJ4dMFMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Decagon\\Desktop\\E-Wallet_decadev\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Decagon\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.25.1\\microsoft.identitymodel.tokens.6.25.1.nupkg.sha512",
     "C:\\Users\\Decagon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Decagon\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Decagon\\.nuget\\packages\\nlog\\5.1.0\\nlog.5.1.0.nupkg.sha512",
     "C:\\Users\\Decagon\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\Decagon\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\Decagon\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
