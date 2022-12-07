@@ -11,6 +11,7 @@
           "E-Wallet-App.Entity": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.IdentityModel.Tokens": "6.25.1",
+          "NLog": "5.1.0",
           "System.IdentityModel.Tokens.Jwt": "6.25.1"
         },
         "runtime": {
@@ -87,6 +88,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "NLog/5.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.0.1480"
+          }
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/6.25.1": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.25.1",
@@ -190,6 +199,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "NLog/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oW7ekrkRG9okpDMUcEglunWj8Qf2RY8qkgl+/chJoavzg3dbT13y32t19R54FKkmq80fKzw4ZekZkCrRGanKgQ==",
+      "path": "nlog/5.1.0",
+      "hashPath": "nlog.5.1.0.nupkg.sha512"
     },
     "System.IdentityModel.Tokens.Jwt/6.25.1": {
       "type": "package",

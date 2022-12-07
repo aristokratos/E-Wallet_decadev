@@ -23,6 +23,7 @@ namespace E_Wallet_App.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IUserLogic _userLogic;
         private readonly IWalletLogic _wallet;
+        private readonly ILoggerManager _logger;   
 
         public UserController(IUserService userService, IUnitOfWork unitOfWork, IUserRepository userRepository, IUserLogic userLogic, IWalletLogic wallet)
         {

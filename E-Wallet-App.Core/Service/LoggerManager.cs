@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace E_Wallet_App.Core.Service
 {
-      public class Logger : ILoggerManager
+      public class LoggerManager : ILoggerManager
     {
         private static ILogger logger = LogManager.GetCurrentClassLogger();
 
-        public Logger()
+        public LoggerManager()
         {
 
         }

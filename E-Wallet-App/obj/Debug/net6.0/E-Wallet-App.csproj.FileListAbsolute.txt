@@ -196,3 +196,5 @@ C:\Users\Decagon\Desktop\E-Wallet_decadev\E-Wallet-App\obj\Debug\net6.0\E-Wallet
 C:\Users\Decagon\Desktop\E-Wallet_decadev\E-Wallet-App\obj\Debug\net6.0\ref\E-Wallet-App.dll
 C:\Users\Decagon\Desktop\E-Wallet_decadev\E-Wallet-App\bin\Debug\net6.0\System.Net.Http.Json.dll
 C:\Users\Decagon\Desktop\E-Wallet_decadev\E-Wallet-App\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Decagon\Desktop\E-Wallet_decadev\E-Wallet-App\bin\Debug\net6.0\NLog.config
+C:\Users\Decagon\Desktop\E-Wallet_decadev\E-Wallet-App\bin\Debug\net6.0\NLog.dll

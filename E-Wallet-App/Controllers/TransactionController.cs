@@ -20,6 +20,12 @@ namespace E_Wallet_App.Controllers
         private readonly IWalletRepository _walletRepository;
         private readonly ITransactionRepository _transactionRepository;
         private readonly ITransLogic _transLogic;
+        private readonly ILoggerManager _logger;
+
+        //public TransactionController(ILogger _logger)
+        //{
+        //    _logger = logger;
+        //}
 
         public TransactionController(IUnitOfWork unitOfWork, IWalletLogic wallet, IWalletRepository walletRepository, ITransactionRepository transactionRepository, ITransLogic transLogic)
         {
@@ -33,6 +39,7 @@ namespace E_Wallet_App.Controllers
         [HttpPost("Deposit")]
         public async Task<ActionResult<TransDto>> Deposite([FromForm]TransDto transDto)
         {
+            //object value = _logger.LogInfo("Post Deposit");
             try
             {
                 var user = await _walletRepository.GetByWalletId(transDto.WalletId);
