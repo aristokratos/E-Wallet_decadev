@@ -13,10 +13,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using NLog;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/NLogconfig"));
 
 // Add services to the container.
 
@@ -34,6 +37,8 @@ builder.Services.AddScoped<IWalletService, WalletService>();
 builder.Services.AddScoped<IWalletLogic, WalletLogic>();
 builder.Services.AddScoped<ITransLogic, TransLogic >();
 builder.Services.AddDbContextPool<ApplicationContext>(options => options.UseSqlite("Data source =E-WalletDatabase"));
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<ILoggerManager, E_Wallet_App.Core.Service.LoggerManager>();    
 builder.Services.AddSwaggerGen(options => {
 
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
