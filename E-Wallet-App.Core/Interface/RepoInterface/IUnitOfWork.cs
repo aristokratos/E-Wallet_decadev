@@ -10,7 +10,7 @@ namespace E_WalletApp.CORE.Interface.RepoInterface
     {
         IUserRepository User { get; }
         IWalletRepository Wallet { get; }
-        ITransactionRepository Transaction { get; }
+        IUserPagin Transaction { get; }
         void Complete();
     }
 }

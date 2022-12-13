@@ -5,6 +5,7 @@ using E_WalletApp.CORE.Interface.RepoInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,11 +15,13 @@ namespace E_Wallet_App.Core.Core
     {
         private IWalletRepository _walletRepository;
         private IUnitOfWork _unitOfWork;
+        private readonly ILoggerManager _logger;
 
-        public TransLogic(IWalletRepository walletRepository, IUnitOfWork unitOfWork) 
+        public TransLogic(IWalletRepository walletRepository, IUnitOfWork unitOfWork, ILoggerManager logger) 
         {
             _walletRepository = walletRepository;
             _unitOfWork = unitOfWork;
+            _logger = logger;
         }
         public async Task<bool> Deposite(TransDto transDto)
         {
@@ -49,34 +52,55 @@ namespace E_Wallet_App.Core.Core
 
         public async Task<bool> Withdrawal(TransDto transDto)
         {
-            bool check = true;
-            bool balcheck = false;
-            var wallet = await _walletRepository.GetByWalletId(transDto.WalletId);
-            if (wallet != null)
+            try
             {
-                if (wallet.Balance < transDto.amount)
+
+
+                bool check = true;
+                bool balcheck = false;
+                var wallet = await _walletRepository.GetByWalletId(transDto.WalletId);
+                if (wallet != null)
                 {
-                    return false;
+                    if (wallet.Balance < transDto.amount)
+                    {
+                        return false;
+                    }
+                    wallet.Balance -= transDto.amount;
+                    wallet.Date = DateTime.Now;
+                    //wallet.WalletId = transDto.WalletId;
+
+                    var transaction = new Transaction();
+                    transaction.Amount = transDto.amount;
+                    transaction.TransactionId = Guid.NewGuid();
+                    transaction.TransactionType = "withdrawal";
+                    transaction.Description = $"your wallet: {transDto.WalletId} has been debited with {transDto.amount}";
+                    transaction.Date = DateTime.Now;
+                    transaction.WalletId = wallet.WalletId;
+                    transaction.CurrentBalance = wallet.Balance;
+                    _unitOfWork.Wallet.Update(wallet);
+                    _unitOfWork.Transaction.Create(transaction);
+                    _unitOfWork.Complete();
+                    return true;
                 }
-                wallet.Balance -= transDto.amount;
-                wallet.Date = DateTime.Now;
-                //wallet.WalletId = transDto.WalletId;
-
-                var transaction = new Transaction();
-                transaction.Amount = transDto.amount;
-                transaction.TransactionId = Guid.NewGuid();
-                transaction.TransactionType = "withdrawal";
-                transaction.Description = $"your wallet: {transDto.WalletId} has been debited with {transDto.amount}";
-                transaction.Date = DateTime.Now;
-                transaction.WalletId = wallet.WalletId;
-                transaction.CurrentBalance = wallet.Balance;
-                _unitOfWork.Wallet.Update(wallet);
-                _unitOfWork.Transaction.Create(transaction);
-                _unitOfWork.Complete();
-                return true;
-
             }
+            catch(Exception ex) 
+            {
+
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+            }
+
+            
             return false;
+        }
+
+        public Task GetBalance(string walletid, string currency)
+        {
+            throw new NotImplementedException();
         }
     }
 }

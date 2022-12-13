@@ -14,7 +14,7 @@ namespace E_WalletRepository.Repository
         private ApplicationContext _applicationContext;
         private IUserRepository _user;
         private IWalletRepository _wallet;
-        private ITransactionRepository _transaction;
+        private IUserPagin _transaction;
         public IUserRepository User
         {
             get
@@ -37,7 +37,7 @@ namespace E_WalletRepository.Repository
                 return _wallet;
             }
         }
-        public ITransactionRepository Transaction
+        public IUserPagin Transaction
         {
             get
             {

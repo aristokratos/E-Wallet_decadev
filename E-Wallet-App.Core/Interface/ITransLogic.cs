@@ -10,6 +10,7 @@ namespace E_Wallet_App.Core.Interface
     public interface ITransLogic
     {
         Task<bool> Deposite(TransDto transDto);
+        Task GetBalance(string walletid, string currency);
         Task<bool> Withdrawal(TransDto transDto);
     }
 }

@@ -17,6 +17,7 @@ namespace E_WalletRepository.Repository
         }
         public async Task<Wallet> GetByWalletId(string Walletid)
         {
+
             var user = _applicationContext.wallets.FirstOrDefault(x => x.WalletId == Walletid);
             if (user == null)
             {

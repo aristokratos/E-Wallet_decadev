@@ -1,4 +1,5 @@
 ﻿using E_Wallet_App.Domain.Models;
+using E_Wallet_App.Entity.Dtos;
 using E_WalletApp.CORE.Interface.RepoInterface;
 using E_WalletApp.DB.Context;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,7 @@ using Transaction = E_Wallet_App.Domain.Models.Transaction;
 
 namespace E_WalletRepository.Repository
 {
-    public class TransactionRepository : RepositoryBase<Transaction>, ITransactionRepository
+    public class TransactionRepository : RepositoryBase<Transaction>, IUserPagin
     {
         public TransactionRepository(ApplicationContext applicationContext) : base(applicationContext)
         {
@@ -27,4 +28,11 @@ namespace E_WalletRepository.Repository
         //    return user;
         //}
     }
+    //public async Task<TransDto> GetWalletDetails(string Currency, Guid walletAddress)
+    //{
+    //    var walletDetails = new _context.Wallets.FirstOrDefaultAsync(x => x.WalletAdress,
+    //        WalletBalance = $"{Currency.ToUpper()} {Math.Round(walletAddress.WalletBalance * await getApi(Currency), 3)}");
+    //}
+    //return walletUserView;
+       
 }

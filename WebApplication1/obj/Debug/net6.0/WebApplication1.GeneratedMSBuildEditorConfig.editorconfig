@@ -9,9 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\hp\Desktop\E-Wallet_decadev\WebApplication1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\hp\Desktop\E-Wallet_decadev\WebApplication1
+=======
+build_property.ProjectDir = C:\Users\Decagon\Desktop\E-Wallet_decadev\WebApplication1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Decagon\Desktop\E-Wallet_decadev\WebApplication1
+>>>>>>> 2c5dc7f5aa16515d37359f0e8733b5ae3f423e1a
 build_property._RazorSourceGeneratorDebug = 

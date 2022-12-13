@@ -23,14 +23,16 @@ namespace E_Wallet_App.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IUserLogic _userLogic;
         private readonly IWalletLogic _wallet;
+        private readonly ILoggerManager _logger;   
 
-        public UserController(IUserService userService, IUnitOfWork unitOfWork, IUserRepository userRepository, IUserLogic userLogic, IWalletLogic wallet)
+        public UserController(IUserService userService, IUnitOfWork unitOfWork, IUserRepository userRepository, IUserLogic userLogic, IWalletLogic wallet, ILoggerManager logger)
         {
             _userService = userService;
             _unitOfWork = unitOfWork;
             _userRepository = userRepository;
             _userLogic = userLogic;
             _wallet = wallet;
+            _logger = logger;
         }
  
         [HttpPost("RegisterUser")]
@@ -60,24 +62,46 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
         [HttpPost("verifyUser")]
         public async Task<ActionResult> VerifyUser([FromForm]string token)
         {
-            var user = await _unitOfWork.User.FindByCondition(u => u.VerificationToken== token);
-            if(user != null)
+            try
             {
-                return BadRequest("user not verified");
-            }
-            foreach(var item in user)
-            {
-                item.VerifiedAt= DateTime.Now;
-            }
-            _unitOfWork.Complete();
 
-            return Ok("user verified");
+
+                var user = await _unitOfWork.User.FindByCondition(u => u.VerificationToken == token);
+                if (user != null)
+                {
+                    return BadRequest("user not verified");
+                }
+                foreach (var item in user)
+                {
+                    item.VerifiedAt = DateTime.Now;
+                }
+                _unitOfWork.Complete();
+
+                return Ok("user verified");
+            }
+            catch (Exception ex)
+            {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+            }
+            return null;
         }
         [HttpPost("Login")]
         public async Task<ActionResult<string>> Login([FromForm] Login user)
@@ -99,6 +123,13 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
@@ -116,6 +147,13 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
@@ -133,6 +171,13 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
@@ -150,6 +195,13 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
@@ -168,6 +220,13 @@ namespace E_Wallet_App.Controllers
             }
             catch(Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
@@ -205,6 +264,13 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Debug($"{ex.Message}");
+                _logger.Debug($"{ex.StackTrace}");
+                _logger.Error($"{ex.InnerException}");
+                _logger.Info($"{ex.GetBaseException}");
+                _logger.Warn($"{ex.GetObjectData}");
+                _logger.Fatal($"{ex.GetHashCode}");
+
                 return StatusCode(500, ex.Message);
             }
         }
