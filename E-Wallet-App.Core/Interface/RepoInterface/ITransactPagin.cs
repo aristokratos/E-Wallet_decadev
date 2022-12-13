@@ -1,4 +1,5 @@
 ﻿using E_Wallet_App.Core.Interface;
+using E_Wallet_App.Domain.Models;
 using E_Wallet_App.Entity.Dtos;
 using E_WalletApp.CORE.Interface.RepoInterface;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +31,7 @@ namespace E_Wallet_App.Controllers
                 {
                     return NotFound("wallet does not exist");
                 }
-                var bal = await _transLogic.GetBalance(walletid, currency);
+                var bal =  await _transLogic.GetBalance(walletid, currency);
                 return bal;
                 // new BalanceDto 
                 //{

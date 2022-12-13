@@ -28,11 +28,11 @@ namespace E_Wallet_App.Controllers
             try
             {
                 var wallet = await _walletRepository.GetByWalletId(walletid);
-                if (wallet == null)
+                if(wallet == null)
                 {
                     return NotFound("wallet does not exist");
                 }
-                var bal = await transLogic.GetBalance(walletid, currency);
+                var bal = await _transLogic.GetBalance(walletid, currency);
                 return bal;
                 // new BalanceDto 
                 //{
@@ -42,7 +42,7 @@ namespace E_Wallet_App.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex.Message);
+               return StatusCode(500, ex.Message);
             }
         }
     }

@@ -132,7 +132,7 @@ namespace E_Wallet_App.Controllers
                 {
                     return NotFound("wallet nnot found");
                 }
-                var trans = await _unitOfWork.Transaction.FindByCondition(x => x.WalletId == transwithId.WalletId);
+              var trans = await _unitOfWork.Transaction.FindByCondition(x => x.WalletId == transwithId.WalletId);
             }
             catch(Exception ex)
             {

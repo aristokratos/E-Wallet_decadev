@@ -1,4 +1,5 @@
-﻿using E_Wallet_App.Entity.Dtos;
+﻿using E_Wallet_App.Domain.Models;
+using E_Wallet_App.Entity.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace E_Wallet_App.Core.Interface
     {
         Task<bool> Deposite(TransDto transDto);
         Task GetBalance(string walletid, string currency);
+        Task GetBalance(Wallet wallet, string currency);
         Task<bool> Withdrawal(TransDto transDto);
     }
 }
