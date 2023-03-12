@@ -10,7 +10,8 @@
         "dependencies": {
           "E-Wallet-App.Core": "1.0.0",
           "E-Wallet-App.Domain": "1.0.0",
-          "E-Wallet-App.Entity": "1.0.0"
+          "E-Wallet-App.Entity": "1.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -243,6 +244,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {},
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
         "dependencies": {
           "SQLitePCLRaw.lib.e_sqlite3": "2.1.2",
@@ -455,6 +457,7 @@
           "E-Wallet-App.Entity": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.IdentityModel.Tokens": "6.25.1",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0",
           "System.IdentityModel.Tokens.Jwt": "6.25.1"
         },
         "runtime": {
@@ -465,13 +468,17 @@
         "dependencies": {
           "E-Wallet-App.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.0"
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0"
         },
         "runtime": {
           "E-Wallet-App.Domain.dll": {}
         }
       },
       "E-Wallet-App.Entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0"
+        },
         "runtime": {
           "E-Wallet-App.Entity.dll": {}
         }
@@ -651,6 +658,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gfDtAL1WhkjbRdbZlt/ZeQYCbgRpNCZCGj+yeqHObsNFRDHjq8qZJOX9AyTxJpSRYMi9SJk7JDyAbbVYRgEhAA==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.0",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
       "type": "package",

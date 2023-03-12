@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  e-wallet-app:
+    image: ${DOCKER_REGISTRY-}ewalletapp
+    build:
+      context: .
+      dockerfile: E-Wallet-App/Dockerfile

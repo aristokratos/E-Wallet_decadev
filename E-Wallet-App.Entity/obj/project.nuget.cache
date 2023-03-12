@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KjqcOgyYllLV1wDUALkxFCA7lbdgGurM6bdD2l6JMPogMJ6x1cTmv7ESOGrIeaIyoNx2kLWS9OsOm1WaX7TLjg==",
+  "dgSpecHash": "0B38VyMyfDBKPxe5AHRSNJ2pmjQgVXrSy4Cg4beu+gr8UzBWdmb8r84vK7Zi6EqI8eAcYZpKCRGLcYfDntbGBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Pictures\\E-Wallet_decadev\\E-Wallet-App.Entity\\E-Wallet-App.Entity.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\DECAGON EDO\\Documents\\Aristokratos\\Documment\\E-Wallet_decadev\\E-Wallet-App.Entity\\E-Wallet-App.Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DECAGON EDO\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
   "logs": []
 }

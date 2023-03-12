@@ -10,3 +10,27 @@ C:\Users\HP\source\repos\E-Wallet-App\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wal
 C:\Users\HP\source\repos\E-Wallet-App\E-Wallet-App.Entity\obj\Debug\net6.0\refint\E-Wallet-App.Entity.dll
 C:\Users\HP\source\repos\E-Wallet-App\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.pdb
 C:\Users\HP\source\repos\E-Wallet-App\E-Wallet-App.Entity\obj\Debug\net6.0\ref\E-Wallet-App.Entity.dll
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\bin\Debug\net6.0\E-Wallet-App.Entity.deps.json
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\bin\Debug\net6.0\E-Wallet-App.Entity.dll
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\bin\Debug\net6.0\E-Wallet-App.Entity.pdb
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.csproj.AssemblyReference.cache
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.AssemblyInfoInputs.cache
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.AssemblyInfo.cs
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.dll
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\refint\E-Wallet-App.Entity.dll
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.pdb
+C:\Users\Decagon\Documents\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\ref\E-Wallet-App.Entity.dll
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\bin\Debug\net6.0\E-Wallet-App.Entity.deps.json
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\bin\Debug\net6.0\E-Wallet-App.Entity.dll
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\bin\Debug\net6.0\E-Wallet-App.Entity.pdb
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.csproj.AssemblyReference.cache
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.AssemblyInfoInputs.cache
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.AssemblyInfo.cs
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.csproj.CoreCompileInputs.cache
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.dll
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\refint\E-Wallet-App.Entity.dll
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\E-Wallet-App.Entity.pdb
+C:\Users\DECAGON EDO\Documents\Aristokratos\Documment\E-Wallet_decadev\E-Wallet-App.Entity\obj\Debug\net6.0\ref\E-Wallet-App.Entity.dll
